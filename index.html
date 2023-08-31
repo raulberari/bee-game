@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Scope+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>🐝 Bee Game</title>
+  </head>
+  <body>
+    <div class="game">
+      <h1>🐝 Bee Game</h1>
+      <div class="box">
+        <p>Player: <span id="player-name-display">Your Name</span></p>
+        <input type="text" id="player-name-input" class="hidden" />
+        <button id="edit-name-button">Edit Name</button>
+      </div>
+
+      <div id="ongoing-game">
+        <button id="hit-button">Hit the Swarm</button>
+
+        <div class="box">
+          <h2>Bee Stats</h2>
+          <p id="hit-info"></p>
+          <p>Total Swarm HP: <span id="total-hp"></span></p>
+        </div>
+        <div id="bee-status">
+          <h3>Queen</h3>
+          <div class="category" id="queens"></div>
+
+          <h3>Workers</h3>
+          <div class="category" id="workers"></div>
+
+          <h3>Drones</h3>
+          <div class="category" id="drones"></div>
+        </div>
+      </div>
+      <div id="end-game">
+        <h2>The queen and the swarm died.</h2>
+        <button id="restart-button">Restart game</button>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
